@@ -11,10 +11,17 @@
 **В каталоге `terraform/`:**
 * все файлы и папки внутри директории `.terraform/` (включая подпапки);
 * файлы с расширением `.tfstate` (например, `terraform.tfstate`);
-* файлы с расширениями `.tfstate.backup`, `.tfstate.lock.info`;
-* файлы с расширением `.tfvars` (например, `terraform.tfvars`);
-* файлы, имена которых содержат `override.tf` или `override.tf.json` (например, `dev.override.tf`);
-* файлы `terraform.rc` и `.terraformrc` (конфигурационные файлы CLI);
-* любые файлы в папке `.terraform.d/`.
+* файлы, имена которых содержат `.tfstate.` (например, `terraform.tfstate.backup`);
+* файл с точным именем `crash.log`;
+* файлы, имена которых соответствуют шаблону `crash.*.log` (например, `crash.123.log`);
+* файлы с расширением `.tfvars` (например, `dev.tfvars`);
+* файлы с расширением `.tfvars.json` (например, `prod.tfvars.json`);
+* файл с точным именем `override.tf`;
+* файл с точным именем `override.tf.json`;
+* файлы, имена которых заканчиваются на `_override.tf` (например, `dev_override.tf`);
+* файлы, имена которых заканчиваются на `_override.tf.json` (например, `prod_override.tf.json`);
+* файл с точным именем `.terraform.tfstate.lock.info`;
+* файл с точным именем `.terraformrc`;
+* файл с точным именем `terraform.rc`.
 
 Добавляем новую строчку
