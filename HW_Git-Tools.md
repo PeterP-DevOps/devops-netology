@@ -45,6 +45,8 @@ dd01a35078 Update CHANGELOG.md
 
 * Найдите все коммиты, в которых была изменена функция globalPluginDirs  
 
+`git log -S "globalPluginDirs"`
+
 7c4aeac5f30aed09c5ef3198141b033eea9912be — stacks: load credentials from config file on startup
 
 65c4ba736375607b6af6c035972f7f151232b6c6 — Remove terraform binary
@@ -62,4 +64,18 @@ c0b17610965450a89598da491ce9b6b5cbd6393f — prevent log output during init
 8364383c359a6b738a436d1b7745ccdce178df47 — Push plugin discovery down into command package
 
 * Кто автор функции synchronizedWriters  
- Martin Atkins  
+`git log -S synchronizedWriters`   
+commit 5ac311e2a91e381e2f52234668b49ba670aa0fe5  
+Author: Martin Atkins <mart@degeneration.co.uk>  
+Date:   Wed May 3 16:25:41 2017 -0700  
+
+`git show 5ac311e2a91e381e2f52234668b49ba670aa0fe5`  
+commit 5ac311e2a91e381e2f52234668b49ba670aa0fe5
+Author: Martin Atkins <mart@degeneration.co.uk>
+Date:   Wed May 3 16:25:41 2017 -0700
+
+diff --git a/synchronized_writers.go b/synchronized_writers.go  
+new file mode 100644  
+index 0000000000..2533d1316c  
+--- /dev/null  
+Файла synchronized_writers.go до этого коммита не существовало, значит автор - Martin Atkins  
